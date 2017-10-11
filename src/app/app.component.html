@@ -1,0 +1,41 @@
+<ng-template #tpl let-title>
+    <div class="long-content">
+        <div class="title">{{title}}</div>
+        ...复杂的节点树...
+    </div>
+</ng-template>
+<ng-container *ngTemplateOutlet="tpl; context: {$implicit: '标题1'}"></ng-container>
+.
+.
+.
+<!-- 这里又需要用到上面class为long-template的div整段代码 -->
+<ng-container [ngTemplateOutlet]="tpl" [ngOutletContext]="{$implicit: '标题2'}"></ng-container>
+
+<!-- app.component.html -->
+<test-comp>
+    <div class="desc"> --> content的内容</div>
+</test-comp>
+
+<card-box>
+    <div card-part="header">
+        <h2>头部内容</h2>
+    </div>
+    <div card-part="body">
+        <p>主体部分的内容</p>
+    </div>
+    <div card-part="footer">
+        <h2>底部内容</h2>
+    </div>
+</card-box>
+
+<card-box>
+    <div card-header>
+        <h2>头部内容</h2>
+    </div>
+    <div card-body>
+        <p>主体部分的内容</p>
+    </div>
+    <div card-footer>
+        <h2>底部内容</h2>
+    </div>
+</card-box>

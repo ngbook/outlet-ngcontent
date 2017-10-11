@@ -1,0 +1,23 @@
+$borderColor: #ccc;
+card-box {
+    .card-wrapper {
+        border: 1px solid $borderColor;
+        border-radius: 4px;
+        display: inline-block;
+        margin: 10px;
+        .section {
+            padding: 10px;
+            h2 {
+                font-size: 16px;
+                margin: 0;
+                color: #777;
+            }
+        }
+        .header-wrap {
+            border-bottom: 1px solid $borderColor;
+        }
+        .footer-wrap {
+            border-top: 1px solid $borderColor;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<div class="test-wrapper">
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+    <hr/>
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+    <hr/>
+</div>
+
+<ng-template #content>
+    <ng-content></ng-content>
+</ng-template>

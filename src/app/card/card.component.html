@@ -1,0 +1,12 @@
+<!-- card布局组件 -->
+<div class="card-wrapper">
+    <div class="header-wrap section">
+        <ng-content select="[card-part=header],[card-header]"></ng-content>
+    </div>
+    <div class="body-wrap section">
+        <ng-content select="[card-part=body],[card-body]"></ng-content>
+    </div>
+    <div class="footer-wrap section">
+        <ng-content select="[card-part=footer],[card-footer]"></ng-content>
+    </div>
+</div>
