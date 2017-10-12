@@ -15,9 +15,11 @@ card-box {
         }
         .header-wrap {
             border-bottom: 1px solid $borderColor;
+            background-color: #ccc;
         }
         .footer-wrap {
             border-top: 1px solid $borderColor;
+            background-color: #ccc;
         }
     }
 }
